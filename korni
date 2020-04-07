@@ -1,0 +1,15 @@
+a = int(input('Введите коэффициент при x в квадрате'))
+b = int(input('Введите коэффициент при x'))
+c = int(input('Введите свободный член'))
+disc = b**2 - 4*a*c
+def find_quadratic_equation_roots(a, b, c, disc):
+    import math
+if(disc>0):
+    x1 = (-b + disc ** 0.5) / (2 * a)
+    x2 = (-b - disc ** 0.5) / (2 * a)
+return x1, x2
+elif(disc==0):
+    return ("x = ", -b/(2 * a))
+else:
+    print('Корней нет')
+
